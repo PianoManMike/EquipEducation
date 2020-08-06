@@ -145,15 +145,8 @@ nav ul li a:hover{
   text-align:  center;
   overflow: hidden;
   width: 100%;
-  height: 80%;
-  overflow: hidden;
+  height: 100%;
   background-color: black;
-}
-
-.video iframe{
-  position: relative;
-  margin: 0px auto;
-  top: -100px;
 }
 
 .videotext{
@@ -289,20 +282,18 @@ article h2{
   }
   
   .video{
-    margin: 0 auto;
-    width: 100%;
-    height: 40%;
+    width: auto;
+    height: auto;
   }
 
-  .video iframe{
-    top: -10%;
-    left: -20%;
-    width: 600px;
-    height: 450px;
+  .video video{
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
   }
 
   .button{
-    top: 30%;
+    top: 23%;
   }
 
   .button a{
@@ -312,8 +303,8 @@ article h2{
   }
 
   .videotext h1{
-    top: 17%;
-    font-size: 2rem;
+    top: 13%;
+    font-size: 1.5rem;
   }
 
   article h2{
@@ -390,33 +381,58 @@ article h2{
   }
 
   .video{
-    margin: 0 auto;
+    width: auto;
+    height: auto;
   }
-  .video iframe{
-    top: -10%;
-    left: -10%;
-    width: 1000px;
-    height: 800px;
+
+  .video video{
+    width: 100%;
+    height: auto;
   }
 
   .videotext h1{
-    top: 30%;
-    font-size: 5rem;
+    top: 20%;
+    font-size: 3rem;
+  }
+
+  .button{
+    top: 40%;
+  }
+
+  .button a{
+    font-size: 1.5rem;
+    padding: 5px 40px;
+    border-width: 3px;
   }
 }
 
 
-@media only screen and (min-width: 1024px) and (max-width: 1440px){
+@media(min-aspect-ratio: 16/9){
 
   .video{
-    margin: 0 auto;
-  }
-  .video iframe{
-    top: -20%;
-    width: 1440px;
-    height: 1000px;
+    margin: 0px auto;
+    width: 100%;
+    height: 80%;
   }
 
+  .video video{
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media(max-aspect-ratio: 16/9) and (min-width: 1024px){
+
+  .video{
+    width: auto;
+    height: auto;
+  }
+
+  .video video{
+    width: 100%;
+    height: auto;
+  }
   .videotext h1{
     top: 30%;
     font-size: 5rem;
